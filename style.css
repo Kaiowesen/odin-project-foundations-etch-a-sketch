@@ -1,0 +1,30 @@
+/* #maincontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 40rem;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-element {
+    background-color: beige;
+    height: 9rem;
+    width: 9rem;
+    margin: 0;
+    padding: 0;
+} */
+.pad {
+    width: 500px;
+    height: 500px;  
+    display: grid;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
