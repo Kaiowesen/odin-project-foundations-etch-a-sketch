@@ -8,10 +8,16 @@
 
 .main-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
 
+}
+
+.title {
+    display: flex;
+    justify-content: center;
 }
 
 .content {
@@ -19,9 +25,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.resize-div {
-    display: flex;
-    padding: auto;
 }

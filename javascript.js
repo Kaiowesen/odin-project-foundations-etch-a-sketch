@@ -4,6 +4,7 @@ let gridSize = 16;
 function resetGridSize() {
     document.querySelectorAll(".grid-element").forEach(x => x.remove());
 
+
     let newGridSizeValue = document.getElementById("box-size").value
 
     setGridSize(newGridSizeValue);
@@ -15,7 +16,7 @@ function setGridSize(newGridSize = 16) {
     board.style.gridTemplateColumns = `repeat(${newGridSize}, 1fr)`
     board.style.gridTemplateRows = `repeat(${newGridSize}, 1fr)`
 
-    for (var i = 0; i < 256; i++) {
+    for (var i = 0; i < 3000; i++) {
         let div = document.createElement('div');
         div.className = "grid-element";
         div.style.backgroundColor = 'beige';
@@ -26,6 +27,8 @@ function setGridSize(newGridSize = 16) {
 
         board.appendChild(div)
     }
+    let boxSizeInput = document.getElementById("box-size");
+    boxSizeInput.value = "";
 }
 setGridSize();
 
